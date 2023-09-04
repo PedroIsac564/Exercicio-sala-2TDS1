@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/styles.category-product.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Categorias & Produtos</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>🛍️ Categorias & Produtos</h1>
+
+        <!-- Category creation form -->
+        <div class="form-container" id="categoryForm">
+            <h2>📁 Criar Categoria</h2>
+            <input type="text" id="categoryName" placeholder="Nome da Categoria" required />
+            <button id="createCategoryButton" class="btn" onclick="createCategory()">
+                Criar Categoria
+            </button>
+            <button id="editCategoryButton" class="editButton hidden" onclick="updateCategory()">
+                Editar Categoria
+            </button>
+        </div>
+
+        <!-- Product creation form -->
+        <div class="form-container" id="productForm">
+            <h2>📦 Criar Produto</h2>
+            <div id="productInfos">
+                <div class="productInputs">
+                    <input type="text" id="productName" placeholder="Nome do Produto" required />
+                </div>
+                <div class="productInputs">
+                    <input type="number" id="productPrice" step="0.01" placeholder="Preço (R$)" required />
+                </div>
+            </div>
+
+            <label for="productCategory">Categoria:</label>
+            <select id="productCategory" required>
+                <!-- Options will be dynamically filled via JavaScript -->
+            </select>
+            <button id="createProductButton" class="btn" onclick="createProduct()">
+                Criar Produto
+            </button>
+            <button id="editProductButton" class="editButton hidden" onclick="updateProduct()">
+                Editar Produto
+            </button>
+        </div>
+
+        <!-- List of categories and products -->
+        <div class="list-container">
+            <h2>📋 Categorias e Produtos</h2>
+            <ul id="categoriesList"></ul>
+        </div>
+    </div>
+
+    <script src="../assets/js/script.category-product.js"></script>
+</body>
+
+</html>

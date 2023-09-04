@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.agenda-telefonica.css">
+    <script src="../js/script.agenda-telefonica.js"></script>
+    <title>Agenda Telefonica</title>
+</head>
+
+<body>
+    <main id="conteiner-divs">
+        <div id="conteiner">
+            <h1>Agenda Telefônica</h1>
+            <div id="conteiner-inputs">
+                <input type="text" placeholder="Nome Completo" id="input-nome" class="inputs">
+                <input type="number" placeholder="Telefone Fixo" id="input-telefixo" class="inputs">
+                <input type="number" placeholder="Telefone Celular" id="input-celular" class="inputs">
+                <input type="text" placeholder="URL da Foto" id="input-imgLink" class="inputs">
+                <input type="text" placeholder="E-mail" id="input-email" class="inputs">
+                <input type="date" id="input-data" class="inputs">
+                <input type="number" placeholder="CEP" id="input-cep" class="inputs">
+                <input type="text" placeholder="Cidade" id="input-cidade" class="inputs">
+                <input type="text" placeholder="@Instagram" id="input-instagram" class="inputs">
+                <input type="text" placeholder="@GitHub" id="input-github" class="inputs">
+                <div id="msg"></div>
+                <button onclick="comporPessoa()" class="button">Adicionar Contato</button>
+            </div>
+        </div>
+        <div id="conteiner-pessoas">
+            <div id="hidden" class="contato-lista">
+
+            </div>
+        </div>
+    </main>
+</body>
+</html>
